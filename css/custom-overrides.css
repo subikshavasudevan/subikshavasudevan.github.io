@@ -248,20 +248,44 @@ html {
 @media (max-width: 768px) {
     /* Header Navigation */
     .container-fluid .d-flex.gap-4 {
+        display: flex !important;
+        gap: 15px !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important; /* Firefox */
+        -ms-overflow-style: none !important; /* IE and Edge */
+        flex: 1 !important;
+        margin: 0 10px !important;
+    }
+    
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .container-fluid .d-flex.gap-4::-webkit-scrollbar {
         display: none !important;
     }
     
+    .container-fluid .d-flex.gap-4 a {
+        flex-shrink: 0 !important;
+        font-size: 13px !important;
+        padding: 5px 12px !important;
+    }
+    
     .container-fluid .d-flex.justify-content-between {
-        padding: 10px 20px !important;
+        padding: 10px 15px !important;
+        flex-wrap: nowrap !important;
     }
     
     .container-fluid img[alt="SNS IMUN Logo"] {
-        height: 45px !important;
+        height: 40px !important;
+        flex-shrink: 0 !important;
     }
     
-    .container-fluid .btn {
-        font-size: 12px !important;
-        padding: 8px 15px !important;
+    .container-fluid > div > .btn {
+        font-size: 11px !important;
+        padding: 6px 12px !important;
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
     }
     
     /* Hero Section */
