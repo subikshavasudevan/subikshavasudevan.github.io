@@ -239,3 +239,166 @@ html {
 .service-img::before {
     display: none !important;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    /* Header Navigation */
+    .container-fluid .d-flex.gap-4 {
+        display: none !important;
+    }
+    
+    .container-fluid .d-flex.justify-content-between {
+        padding: 10px 20px !important;
+    }
+    
+    .container-fluid img[alt="SNS IMUN Logo"] {
+        height: 45px !important;
+    }
+    
+    .container-fluid .btn {
+        font-size: 12px !important;
+        padding: 8px 15px !important;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        min-height: 100vh !important;
+        padding-top: 60px !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.3rem !important;
+        letter-spacing: 0.5px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .hero-section p.fs-5 {
+        font-size: 1rem !important;
+        margin-bottom: 30px !important;
+        padding: 0 10px;
+    }
+    
+    .hero-section h3 {
+        font-size: 1.2rem !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .hero-section .btn-light {
+        font-size: 14px !important;
+        padding: 12px 30px !important;
+    }
+    
+    .hero-section p:last-of-type {
+        font-size: 14px !important;
+        letter-spacing: 1px !important;
+    }
+    
+    /* Section Spacing */
+    .container-fluid.py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .container.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Section Headings */
+    h2.mb-4 {
+        font-size: 1.8rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    h5.text-uppercase {
+        font-size: 0.9rem !important;
+    }
+    
+    /* About Section Image */
+    .about img[style*="height: 400px"] {
+        height: 250px !important;
+    }
+    
+    /* Committee Cards */
+    .service-item {
+        margin-bottom: 20px;
+    }
+    
+    .service-item img {
+        height: 200px !important;
+    }
+    
+    /* Contact Cards */
+    .text-center.p-4[style*="min-height: 220px"] {
+        min-height: 180px !important;
+        padding: 20px !important;
+    }
+    
+    .text-center.p-4 h5 {
+        font-size: 1.1rem !important;
+    }
+    
+    .text-center.p-4 p {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Footer */
+    footer h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    footer p {
+        font-size: 0.85rem !important;
+    }
+    
+    footer .btn {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 14px !important;
+    }
+    
+    /* Spacing adjustments */
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.1rem !important;
+    }
+    
+    .hero-section h3 {
+        font-size: 1rem !important;
+    }
+    
+    .container-fluid .btn {
+        font-size: 11px !important;
+        padding: 6px 12px !important;
+    }
+    
+    h2.mb-4 {
+        font-size: 1.5rem !important;
+    }
+}
