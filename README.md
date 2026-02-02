@@ -1,21 +1,20 @@
-# SNS Institutions AI Education Landing Page
+# SNS Institutions Model United Nations (MUN)
 
-A professional single-page website for SNS Institutions showcasing AI and Machine Learning education programs in partnership with Analytics Vidhya. The website features an interactive 3D robot model, program showcases, and an enrollment form.
+Official website for SNS Institutions Model United Nations showcasing various committees, event information, and registration details.
 
 ## Project Overview
 
-This landing page was developed to promote SNS Institutions' flagship AI and ML education programs. The website combines modern web design with interactive 3D elements to create an engaging user experience for prospective students.
+This website serves as the central platform for SNS Institutions' Model United Nations conference, providing information about different committees, event schedules, and registration process for delegates.
 
 ### Key Features
 
-- Interactive 3D robot model powered by Spline
-- Single-page responsive design
-- Three flagship AI/ML program showcases
-- Modal-based enrollment form
-- Social media integration (Instagram, YouTube, LinkedIn)
-- Shadow effects and smooth animations
+- Committee information displays (UNGA, UNSC, UNHRC, etc.)
+- Responsive single-page design
+- Event registration and details
+- Social media integration
+- Smooth scroll animations
 - Mobile-responsive layout
-- Custom color scheme matching brand identity
+- Custom branding with institutional colors
 
 ## Technology Stack
 
@@ -31,12 +30,11 @@ This landing page was developed to promote SNS Institutions' flagship AI and ML 
 - Animate.css (animation library)
 - Easing.js (smooth scrolling effects)
 - Waypoints.js (scroll-triggered events)
-- Font Awesome 7.0.0 (icons)
+- Owl Carousel (image carousels)
+- Lightbox (image gallery)
+- Font Awesome (icons)
 - Bootstrap Icons
-- Google Fonts (Josefin Sans, Work Sans)
-
-### 3D Integration
-- Spline 3D (embedded iframe for robot model)
+- Google Fonts
 
 ### Version Control
 - Git
