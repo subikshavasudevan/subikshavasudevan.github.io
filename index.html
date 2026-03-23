@@ -85,6 +85,46 @@
             transform: scale(1.05);
             transition: transform 0.3s ease;
         }
+
+        /* FAQ Visibility Improvements */
+        #faq {
+            background-color: #ECF7F5 !important;
+        }
+
+        #faq .accordion-item {
+            border: 2px solid rgba(46, 158, 142, 0.35) !important;
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        #faq .accordion-button {
+            background-color: #ffffff;
+            color: #1e3b36 !important;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        #faq .accordion-button:not(.collapsed) {
+            background-color: #2E9E8E;
+            color: #ffffff !important;
+            box-shadow: none;
+        }
+
+        #faq .accordion-button:focus {
+            box-shadow: 0 0 0 0.2rem rgba(46, 158, 142, 0.25);
+            border-color: rgba(46, 158, 142, 0.55);
+        }
+
+        #faq .accordion-button:not(.collapsed)::after {
+            filter: brightness(0) invert(1);
+        }
+
+        #faq .accordion-body {
+            color: #243632;
+            background-color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
         
         /* Mobile Responsive */
         @media (max-width: 992px) {
@@ -141,11 +181,11 @@
                 <a href="#home" class="nav-pill">Home</a>
                 <a href="#about" class="nav-pill">About</a>
                 <a href="#committees" class="nav-pill">Committees</a>
-                <a href="#announcements" class="nav-pill">Announcements</a>
+                <a href="#faq" class="nav-pill">FAQ</a>
                 <a href="#contact" class="nav-pill">Contact</a>
             </div>
             
-            <a class="btn border-0 px-4 py-2 register-btn header-register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeJksULOC9Oa3Wkl18Jq3QTNggOQM2mxf1qDorOgRqDKABXXA/viewform" target="_blank" rel="noopener noreferrer" style="background-color: #ffffff; color: #000000; border-radius: 25px; font-weight: 600;">Register as Delegate</a>
+            <a class="btn border-0 px-4 py-2 register-btn header-register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfBkAeU3_9oW1IBkHfUup0nHMyqjefEX4bsN0eaUxLXZ9bNCw/viewform" target="_blank" rel="noopener noreferrer" style="background-color: #ffffff; color: #000000; border-radius: 25px; font-weight: 600;">Register as Delegate</a>
         </div>
     </div>
     <!-- Header End -->
@@ -158,9 +198,9 @@
                     <h1 class="display-1 mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff !important; font-weight: 900; letter-spacing: 3px; font-size: 5rem;">SNSIMUN'26</h1>
                     <h2 class="display-5 mb-4 wow fadeInUp" data-wow-delay="0.15s" style="color: #ffffff !important; font-weight: 700; letter-spacing: 1px;">SNS International Model United Nations Society</h2>
                     <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s" style="color: #ffffff !important; line-height: 1.7;">A student-led society fostering diplomacy, global awareness, leadership, and international cooperation across SNS Institutions.</p>
-                    <h3 class="mb-5 wow fadeInUp" data-wow-delay="0.25s" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; letter-spacing: 2px;">MUN Sessions | February 28 & March 1</h3>
+                    <h3 class="mb-5 wow fadeInUp" data-wow-delay="0.25s" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; letter-spacing: 2px;">MUN Sessions | April 3, 4 & 5</h3>
                     <div class="mb-4">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJksULOC9Oa3Wkl18Jq3QTNggOQM2mxf1qDorOgRqDKABXXA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg px-5 py-3 register-btn wow fadeInUp" data-wow-delay="0.3s" style="border-radius: 30px; font-weight: 700; color: #2E9E8E !important;">Register as Delegate</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBkAeU3_9oW1IBkHfUup0nHMyqjefEX4bsN0eaUxLXZ9bNCw/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg px-5 py-3 register-btn wow fadeInUp" data-wow-delay="0.3s" style="border-radius: 30px; font-weight: 700; color: #2E9E8E !important;">Register as Delegate</a>
                     </div>
                     <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: #ffffff !important; font-size: 16px; font-weight: 600; letter-spacing: 2px; font-style: italic;">Debate. Delegate. Decide.</p>
                 </div>
@@ -201,7 +241,7 @@
                 <p class="wow fadeInUp" data-wow-delay="0.3s" style="max-width: 800px; margin: 0 auto;">SNS IMUN activities typically involve participation across various committees and portfolios, allowing members to engage based on their interests and strengths.</p>
             </div>
             
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="committee-card">
                         <div class="mb-3" style="width: 100%; height: 220px; background-color: #F3EFE8; border-radius: 10px; overflow: hidden;">
@@ -209,18 +249,18 @@
                         </div>
                         <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNSC</h4>
                         <h6 style="margin-bottom: 15px; color: #666;">United Nations Security Council</h6>
-                        <p style="margin-bottom: 0;">Focuses on international peace and security, addressing global conflicts, crisis situations, and strategies for maintaining stability among nations.</p>
+                        <p style="margin-bottom: 0;">Agenda: Discussing the role of external actors and resource exploitation in increasing escalations and conflicts across the globe.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="committee-card">
                         <div class="mb-3" style="width: 100%; height: 220px; background-color: #F3EFE8; border-radius: 10px; overflow: hidden;">
-                            <img src="img/disec.jpeg" alt="DISEC" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="img/disec.jpeg" alt="UNGA" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">DISEC</h4>
-                        <h6 style="margin-bottom: 15px; color: #666;">Disarmament and International Security Committee</h6>
-                        <p style="margin-bottom: 0;">Addresses global security challenges, disarmament issues, and international peace, focusing on weapons control, nuclear non-proliferation, and conflict prevention strategies.</p>
+                        <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNGA</h4>
+                        <h6 style="margin-bottom: 15px; color: #666;">United Nations General Assembly</h6>
+                        <p style="margin-bottom: 0;">Agenda: Regulation and ethical governance of autonomous artificial intelligence systems in warfare and surveillance, with special emphasis on preventing proliferation and ensuring global security stability.</p>
                     </div>
                 </div>
                 
@@ -231,7 +271,7 @@
                         </div>
                         <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNHRC</h4>
                         <h6 style="margin-bottom: 15px; color: #666;">United Nations Human Rights Council</h6>
-                        <p style="margin-bottom: 0;">Addresses global human rights concerns and promotes the protection of fundamental freedoms through discussion, resolution drafting, and advocacy.</p>
+                        <p style="margin-bottom: 0;">Agenda: Addressing online child sexual exploitation, with special emphasis on South Asia.</p>
                     </div>
                 </div>
                 
@@ -257,31 +297,90 @@
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.6s">
+                <a href="https://1drv.ms/x/c/0b42c739efb65caa/IQCKCcgC2d_qTrS_1r0ETktGAWf551MsPpUDNbJP4xYFUqM?e=iT9FYQ" target="_blank" rel="noopener noreferrer" class="btn btn-lg px-5 py-3" style="background-color: #2E9E8E; color: #ffffff; border-radius: 0; font-weight: 700; letter-spacing: 1px;">View Country Matrix</a>
+            </div>
         </div>
     </div>
     <!-- Committees & Portfolios Section End -->
 
-    <!-- Announcements Section Start -->
-    <div id="announcements" class="container-fluid py-5 section-cream">
+    <!-- Agenda Section Start -->
+    <div id="agenda" class="container-fluid py-5" style="background-color: #ffffff;">
         <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <div class="wow fadeInLeft" data-wow-delay="0.1s">
-                        <h5 class="text-uppercase mb-2" style="color: #2E9E8E !important; letter-spacing: 2px; font-weight: 600;">Updates</h5>
-                        <h2 class="mb-4" style="font-weight: 800;">Announcements</h2>
-                        <p class="mb-4" style="line-height: 1.8; text-align: justify;">Round 1 registrations for SNSIMUN'26 are now open! Seats are filling out fast for the conference scheduled on February 28 and March 1, 2026.</p>
-                        <p class="mb-0" style="line-height: 1.8; text-align: justify;">Don't miss out on this incredible opportunity! Secure your spot now through the official registration form before all seats are taken!</p>
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase mb-2 wow fadeInUp" data-wow-delay="0.1s" style="color: #2E9E8E !important; letter-spacing: 2px; font-weight: 600;">Conference Focus</h5>
+                <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.2s" style="font-weight: 800;">Agenda</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="committee-card" style="height: 100%;">
+                        <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNSC</h4>
+                        <p style="margin-bottom: 0; line-height: 1.7;">Discussing the role of external actors and resource exploitation in increasing escalations and conflicts across the globe.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="img/er+2.png" alt="Announcements" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(46, 158, 142, 0.3);">
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="committee-card" style="height: 100%;">
+                        <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNGA</h4>
+                        <p style="margin-bottom: 0; line-height: 1.7;">Regulation and ethical governance of autonomous artificial intelligence systems in warfare and surveillance, with special emphasis on preventing proliferation and ensuring global security stability.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="committee-card" style="height: 100%;">
+                        <h4 style="color: #2E9E8E !important; font-weight: 700; margin-bottom: 10px;">UNHRC</h4>
+                        <p style="margin-bottom: 0; line-height: 1.7;">Addressing online child sexual exploitation, with special emphasis on South Asia.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Announcements Section End -->
+    <!-- Agenda Section End -->
+
+    <!-- Executive Board Section Start -->
+    <div id="executive-board" class="container-fluid py-5" style="background-color: #ffffff;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase mb-2 wow fadeInUp" data-wow-delay="0.1s" style="color: #2E9E8E !important; letter-spacing: 2px; font-weight: 600;">Leadership Team</h5>
+                <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.2s" style="font-weight: 800;">Executive Board</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center p-0" style="background-color: #ffffff; border-radius: 0; box-shadow: 0 8px 24px rgba(46, 158, 142, 0.18); overflow: hidden;">
+                        <img src="img/comee/640402431_17870583285558840_6136854702188604557_n.jpeg" alt="Executive Board Member 1" style="width: 100%; height: auto; display: block; border-radius: 0;">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="text-center p-0" style="background-color: #ffffff; border-radius: 0; box-shadow: 0 8px 24px rgba(46, 158, 142, 0.18); overflow: hidden;">
+                        <img src="img/comee/640412985_17870790432558840_7365314842404083340_n.jpeg" alt="Executive Board Member 2" style="width: 100%; height: auto; display: block; border-radius: 0;">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-center p-0" style="background-color: #ffffff; border-radius: 0; box-shadow: 0 8px 24px rgba(46, 158, 142, 0.18); overflow: hidden;">
+                        <img src="img/comee/642536663_17870585787558840_6588999429385650070_n.jpeg" alt="Executive Board Member 3" style="width: 100%; height: auto; display: block; border-radius: 0;">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="text-center p-0" style="background-color: #ffffff; border-radius: 0; box-shadow: 0 8px 24px rgba(46, 158, 142, 0.18); overflow: hidden;">
+                        <img src="img/comee/645453342_17870791143558840_2827850847677179873_n.jpeg" alt="Executive Board Member 4" style="width: 100%; height: auto; display: block; border-radius: 0;">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-center p-0" style="background-color: #ffffff; border-radius: 0; box-shadow: 0 8px 24px rgba(46, 158, 142, 0.18); overflow: hidden;">
+                        <img src="img/comee/download.png" alt="Executive Board Member 5" style="width: 100%; height: auto; display: block; border-radius: 0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Executive Board Section End -->
 
     <!-- Contact Section Start -->
     <div id="contact" class="container-fluid py-5" style="background-color: #ffffff;">
@@ -324,6 +423,88 @@
     </div>
     <!-- Contact Section End -->
 
+    <!-- FAQ Section Start -->
+    <div id="faq" class="container-fluid py-5 section-cream">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase mb-2 wow fadeInUp" data-wow-delay="0.1s" style="color: #2E9E8E !important; letter-spacing: 2px; font-weight: 600;">Need Help?</h5>
+                <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.2s" style="font-weight: 800;">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay="0.1s" style="border: 1px solid rgba(46, 158, 142, 0.2); border-radius: 0;">
+                            <h2 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne" style="font-weight: 700; color: #2E9E8E;">
+                                    What are the conference dates?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    SNSIMUN'26 conference sessions are scheduled for April 3, 4, and 5.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay="0.2s" style="border: 1px solid rgba(46, 158, 142, 0.2); border-radius: 0;">
+                            <h2 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo" style="font-weight: 700; color: #2E9E8E;">
+                                    How can I register as a delegate?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can register through the official "Register as Delegate" button available on this page.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay="0.3s" style="border: 1px solid rgba(46, 158, 142, 0.2); border-radius: 0;">
+                            <h2 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree" style="font-weight: 700; color: #2E9E8E;">
+                                    Who can participate in SNS IMUN?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Anyone in UG and PG from any institution can attend.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay="0.4s" style="border: 1px solid rgba(46, 158, 142, 0.2); border-radius: 0;">
+                            <h2 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour" style="font-weight: 700; color: #2E9E8E;">
+                                    How do I contact the organizing team?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Reach out via email at snsimunsociety25@gmail.com or use the contact details listed on this page.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay="0.5s" style="border: 1px solid rgba(46, 158, 142, 0.2); border-radius: 0;">
+                            <h2 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive" style="font-weight: 700; color: #2E9E8E;">
+                                    What is the dress code for the conference?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Day 1 and Day 3: Formal attire. Day 2: Traditional attire.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
+
     <!-- Footer Start -->
     <div class="container-fluid footer py-4 wow fadeIn" data-wow-delay="0.1s" style="background-color: #111111;">
         <div class="container text-center py-4">
@@ -337,7 +518,6 @@
             </div>
             <p style="font-size: 0.9rem; margin: 0; color: rgba(255, 255, 255, 0.5) !important;">This website serves as an informational platform for SNS IMUN.</p>
             <p style="font-size: 0.9rem; margin-top: 10px; color: rgba(255, 255, 255, 0.5) !important;">&copy; <span style="color: #ffffff !important;">SNS IMUN</span>, All Rights Reserved.</p>
-            <p style="font-size: 0.85rem; margin-top: 5px; color: rgba(255, 255, 255, 0.4) !important;">Developed and Maintained by Phoenix</p>
         </div>
     </div>
     <!-- Footer End -->
