@@ -86,6 +86,44 @@
             transition: transform 0.3s ease;
         }
 
+        /* Hero Prize Pool Highlight */
+        @keyframes prizeGlow {
+            0% { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22), 0 0 0 rgba(255, 222, 89, 0.35); }
+            50% { box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28), 0 0 24px rgba(255, 222, 89, 0.55); }
+            100% { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22), 0 0 0 rgba(255, 222, 89, 0.35); }
+        }
+
+        .prize-pool-banner {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 14px;
+            background: linear-gradient(120deg, rgba(28, 56, 51, 0.85), rgba(46, 158, 142, 0.88));
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.02rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            animation: prizeGlow 2.2s ease-in-out infinite;
+        }
+
+        .prize-pool-banner .amount {
+            font-size: 1.65rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ffe07a, #fff6d1 45%, #ffd45a 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+        }
+
         /* FAQ Visibility Improvements */
         #faq {
             background-color: #ECF7F5 !important;
@@ -158,6 +196,18 @@
             .header-register-btn {
                 display: none;
             }
+
+            .prize-pool-banner {
+                padding: 10px 14px;
+                font-size: 0.92rem;
+                letter-spacing: 0.4px;
+                gap: 8px;
+                border-radius: 12px;
+            }
+
+            .prize-pool-banner .amount {
+                font-size: 1.3rem;
+            }
         }
     </style>
 </head>
@@ -199,6 +249,12 @@
                     <h2 class="display-5 mb-4 wow fadeInUp" data-wow-delay="0.15s" style="color: #ffffff !important; font-weight: 700; letter-spacing: 1px;">SNS International Model United Nations Society</h2>
                     <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s" style="color: #ffffff !important; line-height: 1.7;">A student-led society fostering diplomacy, global awareness, leadership, and international cooperation across SNS Institutions.</p>
                     <h3 class="mb-5 wow fadeInUp" data-wow-delay="0.25s" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; letter-spacing: 2px;">MUN Sessions | April 3, 4 & 5</h3>
+                    <div class="mb-4 wow fadeInUp" data-wow-delay="0.28s">
+                        <div class="prize-pool-banner" role="note" aria-label="Total prize pool is fifty thousand rupees">
+                            <span>Total Prize Pool:</span>
+                            <span class="amount">₹50,000</span>
+                        </div>
+                    </div>
                     <div class="mb-4">
                         <a href="https://forms.gle/uX4cL1TWwemHtDu79" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg px-5 py-3 register-btn wow fadeInUp" data-wow-delay="0.3s" style="border-radius: 30px; font-weight: 700; color: #2E9E8E !important;">Register as Delegate</a>
                     </div>
